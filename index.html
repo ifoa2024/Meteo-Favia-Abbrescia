@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Previsioni meteo per la tua città con un design moderno e gradiente dinamico.">
+    <title>Meteo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Meteo</h1>
+        </header>
+
+        <main>
+            <div class="search-container">
+                <input type="text" id="city" placeholder="Inserisci il nome della città">
+                <button id="getWeatherBtn">Cerca</button>
+            </div>
+            <div class="weather-info" id="weather-info">
+                <p id="location"></p>
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="wind"></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

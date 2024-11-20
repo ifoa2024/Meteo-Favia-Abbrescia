@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    transition: background 0.5s ease-in-out;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+
+input {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #2575fc;
+    background-color: #fff;
+}
+
+button {
+    padding: 12px 30px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #6a11cb; 
+}
+
+.weather-info {
+    margin-top: 30px;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: left;
+}
+
+.weather-info p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.weather-info p#temperature {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2575fc;
+}
+
+.weather-info p#description {
+    text-transform: capitalize;
+    color: #888;
+}
+
+.weather-info p span {
+    font-weight: bold;
+    color: #333;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    input {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 25px;
+    }
+
+    .weather-info {
+        padding: 20px;
+    }
+
+    .weather-info p {
+        font-size: 1rem;
+    }
+}
